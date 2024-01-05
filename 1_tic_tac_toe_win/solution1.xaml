@@ -1,0 +1,320 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="solution1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="643,2519" sap2010:WorkflowViewState.IdRef="solution1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="clr-namespace:practiceGameChallenges;assembly=practiceGameChallenges.Core" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>practiceGameChallenges</x:String>
+      <x:String>UiPath.Core.Activities.UiTree</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>practiceGameChallenges.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.Unsafe</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="solution1" sap:VirtualizedContainerService.HintSize="628,2454" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(ui:UiElement)" Default="[New List(Of UIElement)]" Name="allGrandChildren" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(Of String)]" Name="allImages" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: React App" sap:VirtualizedContainerService.HintSize="586,2366" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1e47a276-f9ce-46fc-8dbc-320d89e85597" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,2149" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="p:TicTacToeGame" sap2010:Annotation.AnnotationText="Type 'p:decideNextMove' ('clr-namespace:practiceGameChallenges;assembly=practiceGameChallenges.Core') could not be resolved and was automatically replaced with 'UnknownType'&#xA;Type 'p:TicTacToeGame' ('clr-namespace:practiceGameChallenges;assembly=practiceGameChallenges.Core') could not be resolved and was automatically replaced with 'UnknownType'&#xA;Type 'p:TicTacToeGame' ('clr-namespace:practiceGameChallenges;assembly=practiceGameChallenges.Core') could not be resolved and was automatically replaced with 'UnknownType'&#xA;Type 'p:TicTacToeGame' ('clr-namespace:practiceGameChallenges;assembly=practiceGameChallenges.Core') could not be resolved and was automatically replaced with 'UnknownType'" Name="gameClass" />
+              <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="uiChildren" />
+              <Variable x:TypeArguments="x:Boolean" Default="True" Name="continue_" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="p:TicTacToeGame">[gameClass]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="p:TicTacToeGame">[New TicTacToeGame("o",False)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Play with O'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e47a276-f9ce-46fc-8dbc-320d89e85597" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://tic-tac-toe-ai.s3-website-us-east-1.amazonaws.com/" CvElementArea="535, 342, 19, 19" CvType="RadioButton" DesignTimeRectangle="538, 345, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='radio' tag='INPUT' class='form-check-input' aaname='' /&gt;" Guid="6390e140-4649-4a8b-87a6-01e8d9790228" InformativeScreenshot="6d09abbae1c61234cb49901776ca2e30.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="622, 345, 15, 16" CvTextArea="557, 344, 64, 19" CvTextArgument="Play with" CvType="RadioButton" DesignTimeRectangle="558, 340, 79, 24" ElementType="Text" FriendlyName="'Play with O'" FullSelectorArgument="&lt;webctrl aaname='Play with O' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Play with O' tag='LABEL' type='' class='form-check-label' check:innerText='Play with O' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'hard'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e47a276-f9ce-46fc-8dbc-320d89e85597" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://tic-tac-toe-ai.s3-website-us-east-1.amazonaws.com/" CvElementArea="729, 342, 19, 19" CvType="RadioButton" DesignTimeRectangle="732, 345, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='2' name='level' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='radio' name='level' tag='INPUT' class='form-check-input' aaname='' /&gt;" Guid="c389dac1-2cb6-43c2-9eb6-a97e6a9fe22b" InformativeScreenshot="61f0458b03d668f7edb0aa18c99703a8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="750, 344, 34, 15" CvTextArgument="hard" CvType="Text" DesignTimeRectangle="752, 340, 32, 24" ElementType="Text" FriendlyName="'hard'" FullSelectorArgument="&lt;webctrl aaname='hard' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='hard' tag='LABEL' type='' class='form-check-label' check:innerText='hard' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'start'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e47a276-f9ce-46fc-8dbc-320d89e85597" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://tic-tac-toe-ai.s3-website-us-east-1.amazonaws.com/" CvElementArea="652, 399, 59, 40" CvTextArea="665, 413, 34, 13" CvTextArgument="start" CvType="Button" DesignTimeRectangle="654, 400, 57, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'start'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='btn btn-primary' aaname='start' check:innerText='start' /&gt;" Guid="56ee49da-4dc9-4ac0-8b96-faed6ffdae61" InformativeScreenshot="69434924b5384c689e725ad3e9045cfa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[continue_]" DisplayName="While" sap:VirtualizedContainerService.HintSize="510,1161" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1025" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="s:ValueTuple(x:Int32, x:Int32)" Name="selectedMove" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <ui:FindChildren Children="[uiChildren]" DisplayName="Find Children 'DIV'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+                    <ui:FindChildren.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="85ac4070-8bf5-4788-80f5-1a54c4726bb5" InformativeScreenshot="82d9e4a7be2c4fab7ca77f9050017193" Selector="&lt;html app='chrome.exe' title='React App' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='root' tag='DIV' class='boardContent' /&gt;&lt;webctrl class='board' parentid='root' tag='DIV' parentclass='boardContent' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:FindChildren.Target>
+                  </ui:FindChildren>
+                  <ui:FindRelative RelativeElement="{x:Null}" DisplayName="Find Relative Element" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="FindRelative_1">
+                    <ui:FindRelative.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:FindRelative.CursorPosition>
+                    <ui:FindRelative.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="5b30f861-6bf7-45d7-9830-f9df5f704839">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:FindRelative.Target>
+                  </ui:FindRelative>
+                  <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[uiChildren]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="ui:UiElement">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ui:UiElement" Name="uiChild" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,974" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="uiGrandChildren" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:FindChildren Children="[uiGrandChildren]" DisplayName="Find Children" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_CHILDREN">
+                            <ui:FindChildren.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[uiChild]" Id="e8965f82-6bdd-4adc-ad10-603fbc84d63a">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:FindChildren.Target>
+                          </ui:FindChildren>
+                          <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,637" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[uiGrandChildren]">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="ui:UiElement">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ui:UiElement" Name="grandChild" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,451" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="imagePath" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="src" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="334,187" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" InUiElement="[grandChild]" Result="[imagePath]" Version="V3" />
+                                  <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="334,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
+                                    <InvokeMethod.TargetObject>
+                                      <InArgument x:TypeArguments="scg:List(x:String)">[allImages]</InArgument>
+                                    </InvokeMethod.TargetObject>
+                                    <InArgument x:TypeArguments="x:String">[imagePath]</InArgument>
+                                  </InvokeMethod>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
+                          </ui:ForEach>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="scg:List(ui:UiElement)">[allGrandChildren]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="scg:List(ui:UiElement)">[Enumerable.Concat(allGrandChildren, uiGrandChildren.ToList).ToList]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
+                  <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="GetNewMatrix">
+                    <InvokeMethod.TargetObject>
+                      <InArgument x:TypeArguments="p:TicTacToeGame">[gameClass]</InArgument>
+                    </InvokeMethod.TargetObject>
+                    <InArgument x:TypeArguments="scg:List(ui:UiElement)">[allGrandChildren]</InArgument>
+                  </InvokeMethod>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="s:ValueTuple(x:Int32, x:Int32)">[selectedMove]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="s:ValueTuple(x:Int32, x:Int32)">[gameClass.chooseNextMove()]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;selected move was: (&quot; + selectedMove.Item1.ToString +&quot;,&quot;+ selectedMove.Item2.ToString + &quot;)&quot;]" />
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+            </ui:InterruptibleWhile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;some message&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="7a41eb4720031189c706094f673a48e7.jpg" Selector="&lt;html app='chrome.exe' title='React App' /&gt;" Title="Tic-Tac-Toe - Play retro Tic-Tac-Toe online for free" Url="http://tic-tac-toe-ai.s3-website-us-east-1.amazonaws.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

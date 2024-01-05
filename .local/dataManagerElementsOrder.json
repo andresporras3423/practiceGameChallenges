@@ -1,0 +1,37 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "1_tic_tac_toe_win/solution1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "continue_&Sequence_2",
+        "selectedMove&Sequence_6",
+        "allImages&Sequence_1",
+        "imagePath&Sequence_4",
+        "gameClass&Sequence_2",
+        "allGrandChildren&Sequence_1",
+        "uiGrandChildren&Sequence_3",
+        "uiChildren&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
